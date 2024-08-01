@@ -1,0 +1,31 @@
+GET http://localhost:3333/memories
+
+###
+
+GET http://localhost:3333/memories/1357babd-2fb4-49f4-9565-dfb54c239838
+
+###
+
+POST http://localhost:3333/memories
+Content-Type: application/json
+
+{
+  "content": "test",
+  "coverUrl": "https://github.com/diego3g.png",
+  "isPublic": 1
+}
+
+###
+
+PUT http://localhost:3333/memories/7d953e71-6b2d-48ea-8163-b98e522c20b3
+Content-Type: application/json
+
+{
+  "content": "oiiii",
+  "coverUrl": "https://github.com/diego3g.png",
+  "isPublic": 1
+}
+
+###
+
+DELETE http://localhost:3333/memories/7d953e71-6b2d-48ea-8163-b98e522c20b3
